@@ -1,7 +1,8 @@
-// import reactLogo from './assets/react.svg';
+
+import { AppRoute } from "./routes/AppRoute";
 
 function App() {
-  return <div></div>;
+  return <AppRoute/>;
 }
 
 export default App;
