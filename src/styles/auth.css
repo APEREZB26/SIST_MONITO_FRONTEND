@@ -64,10 +64,13 @@
   height: 50px;
   font-size: 12px;
 }
-
+a{
+  width: 89%;
+  height: auto;
+}
 .formContent form input[type="submit"] {
   cursor: pointer;
-  width: 89%;
+  width: 100%;
   margin: 20px 4px;
   height: 50px;
   border-radius: 7px;
@@ -78,7 +81,7 @@
 .formContent form input[type="submit"]:hover {
   background-color: #81a9dd;
 }
-form div{
+.formContent form div{
   display: flex;
   justify-content: center;
   margin: 0px 0 10px 0;

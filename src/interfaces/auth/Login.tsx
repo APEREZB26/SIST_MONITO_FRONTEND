@@ -1,5 +1,6 @@
 import "../../styles/auth.css";
 import logo  from "../../assets/mtg.png";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return (
@@ -19,7 +20,9 @@ export const Login = () => {
               Contraseña
               <input type="password" />
               <div>
+              <Link to="/HomeAgente">
                 <input type="submit" value="Continuar" />
+              </Link>
               </div>
             </form>
           </div>
@@ -30,7 +33,7 @@ export const Login = () => {
           <p> &copy; 2022 MTG - Todos los derechos reservados</p>         
         </div>
         <div className="content-Suport"> 
-          <button>Soporte</button>
+            <button>Soporte</button>
         </div>
       </div>
     </div>
