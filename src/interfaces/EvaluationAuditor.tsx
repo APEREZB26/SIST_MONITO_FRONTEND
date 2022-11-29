@@ -1,19 +1,19 @@
 import "../styles/evaluation.css";
-import { HeaderAgente } from '../components/ui/HeaderAgente';
+import { HeaderAuditor } from '../components/ui/HeaderAuditor';
 import { Link } from "react-router-dom";
 import usuario  from "../assets/usuario.png";
 import audio  from "../assets/pipipAudio.mp4";
 
-export const EvaluationAgente = () => {
+export const EvaluationAuditor = () => {
   return (
     <div className="bodyAgente">
-        <HeaderAgente/>
+        <HeaderAuditor/>
         <div className="content-title">
             <div>
                 <p>Quality Evaluation</p>
             </div>
             <div>
-             <Link to="/HomeAgente">
+             <Link to="/HomeAuditor">
                 <p>Regresar</p>
              </Link>
             </div>
@@ -38,18 +38,6 @@ export const EvaluationAgente = () => {
                         <p>100%</p>
                     </div>
                     <div>
-                        <p>Evaluated by:</p>
-                        <p>Kenneth DeLaCuz_Rom</p>
-                    </div>
-                    <div>
-                        <p>Auditor Id:</p>
-                        <p>5006900004ppr6RAAQ</p>
-                    </div>
-                    <div>
-                        <p>Auditor Fullname:</p>
-                        <p>Kenneth De la Cruz</p>
-                    </div>
-                    <div>
                         <p>Created Date:</p>
                         <p>Sep 12 12:00, 2022</p>
                     </div>
@@ -63,7 +51,7 @@ export const EvaluationAgente = () => {
                     </div>
                 </div>
                 <div className="profile-audio">
-                    <audio src={ audio } controls> este es un elemento de audio no soportado por tu navegador, prueba con otro </audio>
+                    <audio src={ audio } controls></audio>
                 </div>
            </div>
            <div className="content-progress">
@@ -95,7 +83,17 @@ export const EvaluationAgente = () => {
                             <p>Si</p>
                         </div>
                         <div className="result-grafico">
-                            <progress value="1" max="5"></progress>
+                            <form>
+                                <div className="grafico-info">
+                                    <div>
+                                        <label>0</label>
+                                    </div>
+                                    <div>
+                                        <label>5</label>
+                                    </div>
+                                </div>
+                                <input type="range" id="rango1" min="0" max="5" step="1"/>
+                            </form>
                         </div>
                         <div className="result-pie">
                             <div>
@@ -110,7 +108,7 @@ export const EvaluationAgente = () => {
                             <p>GREETING & CLOSING</p>
                         </div>
                         <div className="info2">
-                            <p>Weight 100%</p>
+                            <p>Weight 75%</p>
                         </div>
                         <div className="info3">
                             <p className="plomo">100%</p>
@@ -132,7 +130,17 @@ export const EvaluationAgente = () => {
                             <p>Si</p>
                         </div>
                         <div className="result-grafico">
-                            <progress value="5" max="5"></progress>
+                            <form>
+                                <div className="grafico-info">
+                                    <div>
+                                        <label>0</label>
+                                    </div>
+                                    <div>
+                                        <label>5</label>
+                                    </div>
+                                </div>
+                                <input type="range" id="rango1" min="0" max="5" step="1"/>
+                            </form>
                         </div>
                         <div className="result-pie">
                             <div>
@@ -147,7 +155,7 @@ export const EvaluationAgente = () => {
                             <p>GREETING & CLOSING</p>
                         </div>
                         <div className="info2">
-                            <p>Weight 30%</p>
+                            <p>Weight 75%</p>
                         </div>
                         <div className="info3">
                             <p className="plomo">100%</p>
@@ -169,7 +177,17 @@ export const EvaluationAgente = () => {
                             <p>Si</p>
                         </div>
                         <div className="result-grafico">
-                            <progress value="3" max="5"></progress>
+                            <form>
+                                <div className="grafico-info">
+                                    <div>
+                                        <label>0</label>
+                                    </div>
+                                    <div>
+                                        <label>5</label>
+                                    </div>
+                                </div>
+                                <input type="range" id="rango1" min="0" max="5" step="1"/>
+                            </form>
                         </div>
                         <div className="result-pie">
                             <div>
@@ -181,17 +199,6 @@ export const EvaluationAgente = () => {
                 <div className="content-feedback">
                     <p>FeedBack:</p>
                     <p className="plomo">Buena gestión, felicitaciones a seguir el proceso correrto siempre. 🙌🙌🙌</p>
-                </div>
-                <div className="content-check">
-                    <div>
-                        <input type="checkbox" />
-                    </div>
-                    <div>
-                        <p>Signed On: </p>
-                    </div>
-                    <div>
-                        <p className="plomo">Sep 12 12:00, 2022</p>
-                    </div>
                 </div>
                 <div className="content-coment">
                     <div className="coment-header">
